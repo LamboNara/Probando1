@@ -5,16 +5,16 @@
 # y lo dividimos en 3 funciones.
 
 def open_cost():
-    '''Abre el archivo y crea una lista'''
-    archivo = open("gift_costs.txt","r", encoding="utf-8" )
-    gift_costs = list(archivo)
-    gift_costs = [int(c) for c in gift_costs]  # convierte strings a int
-    archivo.close()  # cerramos el archivo
+    """Abre el archivo y crea una lista"""
+    with open("gift_costs.txt","r", encoding="utf-8" ) as costos:
+        gift_costs = list(costos)
+        gift_costs = [int(c) for c in gift_costs]  # convierte strings a int
+        costos.close()  # cerramos el archivo
     return gift_costs
 
 
 def tax(gift_costs):
-    '''Calculo agregando los impuestos'''
+    """Calculo agregando los impuestos"""
     total_price = 0
     for cost in gift_costs:
         if cost > 1000:
@@ -26,7 +26,7 @@ def tax(gift_costs):
 
 
 def terminal():
-    '''Ultima funcion, donde imprime el costo'''
+    """Ultima funcion, donde imprime el costo"""
     print(tax(open_cost()))
     # imprimir el resultado
 
