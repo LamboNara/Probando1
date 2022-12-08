@@ -20,3 +20,8 @@ Utilizamos Pytest, para realizar todas las pruebas, excelentemente las 3 pruebas
 # Control de versiones 
 
 Link https://github.com/LamboNara/RefinandoCodigo-22-0259.git
+
+Capturas de Limpieza y los Commits
+(https://user-images.githubusercontent.com/113955161/206584294-9c7a0681-d533-4760-8be9-143b49642868.jpeg)
+(https://user-images.githubusercontent.com/113955161/206584295-a26b6475-5090-41a3-9fd6-dd1291b6b8e3.jpeg)
+(https://user-images.githubusercontent.com/113955161/206584449-6b0dfd2f-0821-429a-ac08-cbe0fa5fbf1d.jpeg)
