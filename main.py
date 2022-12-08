@@ -7,9 +7,13 @@
 def open_cost():
     """Abre el archivo y crea una lista"""
     with open("gift_costs.txt","r", encoding="utf-8" ) as costos:
-        gift_costs = list(costos)
-        gift_costs = [int(c) for c in gift_costs]  # convierte strings a int
-        costos.close()  # cerramos el archivo
+        try:
+            gift_costs = list(costos)
+            gift_costs = [int(c) for c in gift_costs]  # convierte strings a int
+            costos.close()  # cerramos el archivo
+        except ValueError:
+            print('Los datos introducidos tienen que ser numeros')
+            exit(0)
     return gift_costs
 
 
